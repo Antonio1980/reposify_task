@@ -82,10 +82,10 @@ TESTS
 * $ docker build . --rm -f "Dockerfile" -t [project_name]:latest 
 
 11 Run tests under tox and pass environment variable:
-* $ ENV=int tox -- -m [GROUP_NAME] --alluredir=../src/allure_results
+* $ ENV=int tox -- -m [GROUP_NAME] --alluredir=../allure_/allure_results
 
 12 Run tests under tox:
-* $ tox -- -m [GROUP_NAME] --alluredir=../src/allure_results
+* $ tox -- -m [GROUP_NAME] --alluredir=../allure_/allure_results
 
 
 * Test Groups:
