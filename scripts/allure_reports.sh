@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 if [[ ! -d ~/Allure/bin/ ]]; then
   # shellcheck disable=SC2242

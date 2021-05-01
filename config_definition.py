@@ -5,10 +5,10 @@ from allure_ import allure_dir
 from base.enums import Environment
 
 executor = {
+    "Builder": "tox 3.10.0",
     "buildName": "root project:- 'reposify tests'",
     "type": "Python 3.9, pytest 5.4.2",
-    "IDE": "PyCharm 2019.2",
-    "Builder": "tox 3.10.0"
+    "IDE": "PyCharm 2019.2"
 }
 
 

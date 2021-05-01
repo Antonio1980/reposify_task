@@ -44,11 +44,11 @@ REQUIREMENTS
 5. Project requirements installed.
 6. Project plugins installed.
 7. Allure installed locally to: ~/Allure/bin/allure
-https://docs.qameta.io/allure/
 
 TESTS
 -----
 * All examples are shown with collecting results files for allure report.
+See allure documentation here: https://docs.qameta.io/allure/
 
 1 Run all tests:
 * $ pytest -v tests --alluredir=allure_/allure_results
@@ -111,8 +111,8 @@ https://tox.readthedocs.io/en/latest/example/general.html
 * $ pip install -r requirements.txt
 
 - pytest configuration specified in pytest.ini
-! currently using: ignore::DeprecationWarning
-always will run fixture run_time_counter
+currently, using: ignore::DeprecationWarning
+will always run fixture run_time_counter
 
 
 MAINTAINERS

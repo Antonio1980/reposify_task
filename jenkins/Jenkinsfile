@@ -1,0 +1,44 @@
+pipeline {
+    agent  any
+
+    parameters {
+
+       booleanParam(
+          name: 'clear_previous_results',
+          defaultValue: true,
+          description: "Clear previous test result. need to be performed in case of failures in previous builds")
+
+       choice(
+          name: 'TEST_GROUP',
+          choices: "regression\n",
+          description: "select test group for regression testes client to update or all" )
+       string(
+          name: 'tests_env',
+          defaultValue: "local",
+          description: " ")
+    }
+       stage (clear_previous) {
+          when {
+             expression { params.clear_previous_results }
+          }
+             steps {
+               sh 'env'
+               sh 'rm -rf  ../allure_/allure-results/*'
+             }
+       }
+
+    post {
+          always {
+               script {
+                   allure([
+                           includeProperties: false,
+                           IncludeEnvironment: true,
+                           jdk: '',
+                           properties: [],
+                           results: [[path: '../allure_/allure-results']]
+                   ])
+               }
+          }
+    }
+
+}
