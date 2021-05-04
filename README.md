@@ -19,8 +19,8 @@ The "reposify_task"- simple automation test project (framework with tests).
 LOCATION
 ---------
 
-- SSH: git@github.com:Antonio1980/reposify_task.git
-- HTTPS://github.com/Antonio1980/reposify_task.git
+- SSH: git@github.com:Antonio1980/template_of_testing_rest_api.git
+- HTTPS://github.com/Antonio1980/template_of_testing_rest_api.git
 
 TECHNOLOGIES
 ------------
