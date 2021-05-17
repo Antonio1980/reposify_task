@@ -1,7 +1,6 @@
 from base.api_.requests.request_schema import RequestSchema
 from base.constants import *
 from base.logger import automation_logger, logger
-from base.utils import Utils
 
 
 class RequestBody(RequestSchema):

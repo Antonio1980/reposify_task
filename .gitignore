@@ -136,8 +136,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-# Project specific files
-/allure_/
-allure_/
-allure_/*
